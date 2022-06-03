@@ -103,3 +103,15 @@ func TestGetDirs(t *testing.T) {
 
 	})
 }
+
+func TestGetDirsError(t *testing.T) {
+	provideTempEnv(tmpPrefix, func(folder string) {
+		log.Printf("folder: %s\n", folder)
+		var path = folder + "/notExistingFolder"
+		var _, err = GetDirs(path)
+
+		if err == nil {
+			t.Errorf("getDirs should raise an error")
+		}
+	})
+}
