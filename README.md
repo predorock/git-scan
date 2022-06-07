@@ -1,3 +1,4 @@
+[![Go](https://github.com/predorock/git-scan/actions/workflows/go.yml/badge.svg)](https://github.com/predorock/git-scan/actions/workflows/go.yml)
 # Git Scanner
 
 A tool written in go to execute git commands on multiple repos folders
